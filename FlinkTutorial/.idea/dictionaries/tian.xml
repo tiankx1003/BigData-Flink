@@ -4,7 +4,10 @@
       <w>dstream</w>
       <w>flink</w>
       <w>groupby</w>
+      <w>metastore</w>
       <w>tian</w>
+      <w>typer</w>
+      <w>wordcount</w>
       <w>worldcount</w>
     </words>
   </dictionary>
