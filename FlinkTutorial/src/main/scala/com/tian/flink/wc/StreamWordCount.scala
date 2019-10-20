@@ -31,7 +31,7 @@ object StreamWordCount {
             .keyBy(0)
             .sum(1)
 
-        dataStream.print().setParallelism(1) //并行度设置
+        dataStream.print().setParallelism(2) //并行度设置
 
         // 启动executor，执行任务
         env.execute("Socket stream word count")
