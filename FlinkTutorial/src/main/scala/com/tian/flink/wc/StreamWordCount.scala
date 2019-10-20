@@ -1,7 +1,7 @@
-package com.tian.wc
+package com.tian.flink.wc
 
 import org.apache.flink.api.java.utils.ParameterTool
-import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 
 /**
  * 流处理wordcount

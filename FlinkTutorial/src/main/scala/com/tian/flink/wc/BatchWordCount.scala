@@ -1,6 +1,7 @@
-package com.tian.wc
+package com.tian.flink.wc
 
-import org.apache.flink.api.scala._
+import org.apache.flink.api.scala.{AggregateDataSet, DataSet, ExecutionEnvironment}
+
 /**
  * 批处理wordcount
  *
