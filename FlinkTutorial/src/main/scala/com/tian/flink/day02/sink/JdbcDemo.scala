@@ -19,7 +19,7 @@ object JdbcDemo {
         import org.apache.flink.streaming.api.scala._
         val sensorStream = socketSource.map(data => {
             val splits = data.split(",")
-            SensorReading(splits(0), splits(1).toLong, splits(2).toDouble)
+            SensorReading(splits(0).trim, splits(1).trim.toLong, splits(2).trim.toDouble)
         })
         sensorStream.addSink(new MyJdbcSink)
         env.execute()
