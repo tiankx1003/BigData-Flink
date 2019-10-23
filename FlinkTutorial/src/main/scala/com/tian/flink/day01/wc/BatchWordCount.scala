@@ -1,4 +1,4 @@
-package com.tian.flink.wc
+package com.tian.flink.day01.wc
 
 import org.apache.flink.api.scala.{AggregateDataSet, DataSet, ExecutionEnvironment}
 import org.apache.flink.api.scala._

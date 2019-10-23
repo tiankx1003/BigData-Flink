@@ -1,4 +1,4 @@
-package com.tian.flink.wc
+package com.tian.flink.day01.wc
 
 import org.apache.flink.api.java.utils.ParameterTool
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}

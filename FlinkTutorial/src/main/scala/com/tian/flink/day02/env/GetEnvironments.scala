@@ -1,4 +1,4 @@
-package com.tian.flink.env
+package com.tian.flink.day02.env
 
 import org.apache.flink.api.scala.ExecutionEnvironment
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment

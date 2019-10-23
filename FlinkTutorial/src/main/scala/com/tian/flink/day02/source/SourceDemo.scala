@@ -1,4 +1,4 @@
-package com.tian.flink.source
+package com.tian.flink.day02.source
 
 import java.util.Properties
 
@@ -38,8 +38,8 @@ object SourceDemo {
             env.addSource(new FlinkKafkaConsumer011[String]("sensor", new SimpleStringSchema(), properties))
         //从自定义source中获取数据
         val mySource: DataStream[SensorReading] = env.addSource(new MySensorSource())
-        listSource.print.setParallelism(1)
-        //fileSource.print.setParallelism(1)
+        //listSource.print.setParallelism(1)
+        fileSource.print.setParallelism(1)
         //kafkaSource.print.setParallelism(1)
         //mySource.print.setParallelism(1)
         env.execute()
